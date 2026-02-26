@@ -1,0 +1,97 @@
+// styles/main.scss
+
+// Couleurs Figma
+$bg-color: #f8f9fa;
+$primary-green: #00c06d;
+$text-dark: #1a1a1a;
+
+body {
+    background-color: $bg-color;
+    font-family: 'Inter', sans-serif;
+    color: $text-dark;
+}
+
+header {
+    padding: 20px;
+    h1 { font-size: 1.8rem; margin-bottom: 5px; }
+    p { color: #666; font-size: 0.9rem; }
+}
+
+#recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // Figma k-i-3ti 2 cards f l-line
+    gap: 15px;
+    padding: 15px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    // margin-top: 10px;
+
+
+    .card-image-container {
+        position: relative;
+        height: 180px;
+
+        img { width: 100%; height: 100%; object-fit: cover; }
+
+        .btn-favorite-icon {
+            position: absolute;
+            top: 10px; right: 10px;
+            background: rgba(255,255,255,0.8);
+            border: none; border-radius: 50%;
+            width: 30px; height: 30px;
+        }
+
+        .calorie-tag {
+            position: absolute;
+            bottom: 10px; left: 10px;
+            padding: 4px 10px; border-radius: 12px;
+            font-size: 0.7rem; font-weight: bold; color: white;
+            
+            &.badge-green { background: #00c06d; }
+            &.badge-orange { background: #ff9f43; }
+            &.badge-red { background: #ee5253; }
+        }
+    }
+
+    .card-content {
+        padding: 12px;
+        h3 { font-size: 0.9rem; margin-bottom: 5px; line-height: 1.2; }
+        .rating { font-size: 0.8rem; color: #ff9f43; font-weight: bold; }
+    }
+}
+
+/* main.css */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+}
+
+#recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards f l-line bhal Figma */
+    gap: 15px;
+    padding: 15px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 20px; /* Rounded corners bhal Figma */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.calorie-tag {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 192, 109, 0.9); /* Green Figma color */
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+}

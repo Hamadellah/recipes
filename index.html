@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriFlow — Votre Coach Wellness</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <div id="app">
+        <header class="app-header">
+            <div class="header-top">
+                <div>
+                    <h1>NutriFlow</h1>
+                    <p>Find your next healthy meal</p>
+                </div>
+                <button class="btn-notif">🔔</button>
+            </div>
+
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-bar" placeholder="Search recipes...">
+                <button class="filter-btn">🔄</button>
+            </div>
+        </header>
+
+        <section class="categories-filter">
+            <button class="chip active">All</button>
+            <button class="chip">Breakfast</button>
+            <button class="chip">Dessert</button>
+            <button class="chip">Appetizers</button>
+        </section>
+
+        <main id="recipe-grid">
+            </main>
+
+        <div id="loader" class="hidden">
+            <div class="spinner"></div>
+            <p>Chargement des recettes...</p>
+        </div>
+
+        <nav class="bottom-nav">
+            <button class="nav-item active">🏠 <span>Home</span></button>
+            <button class="nav-item">❤️ <span>Favorites</span></button>
+            <button class="nav-item">👤 <span>Profile</span></button>
+        </nav>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
