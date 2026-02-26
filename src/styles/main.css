@@ -131,4 +131,27 @@ body {
   padding: 4px 10px;
   border-radius: 12px;
   font-size: 0.7rem;
+}
+
+.alll {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-item {
+  width: 80px;
+  height: 60px;
+  font-size: 40px;
+  border-radius: 33px;
+  border-color: transparent;
 }/*# sourceMappingURL=main.css.map */
