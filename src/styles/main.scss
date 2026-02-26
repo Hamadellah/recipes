@@ -87,8 +87,18 @@ body {
 .categories-filter{
     display: flex;
     justify-content: center;
-    
+    gap: 30px;
 
+}
+.chip{
+width: 100px;
+height: 30px;
+border-radius: 30px;
+}
+.search{
+    width: 250px;
+    height: 30px;
+    border-color: transparent;
 }
 
 .calorie-tag {
