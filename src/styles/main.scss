@@ -11,6 +11,7 @@ body {
     color: $text-dark;
 }
 
+
 header {
     padding: 20px;
     h1 { font-size: 1.8rem; margin-bottom: 5px; }
@@ -23,6 +24,7 @@ header {
     gap: 15px;
     padding: 15px;
 }
+
 
 .recipe-card {
     background: white;
@@ -96,9 +98,12 @@ height: 30px;
 border-radius: 30px;
 }
 .search{
-    width: 250px;
-    height: 30px;
+    width: 400px;
+    height: 50px;
     border-color: transparent;
+    border-radius:30px ;
+    margin-left: 20px;
+
 }
 
 .calorie-tag {
