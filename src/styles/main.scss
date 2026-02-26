@@ -1,6 +1,4 @@
-// styles/main.scss
 
-// Couleurs Figma
 $bg-color: #000000;
 $primary-green: #00c06d;
 $text-dark: #1a1a1a;
@@ -67,7 +65,6 @@ header {
     }
 }
 
-/* main.css */
 body {
     background-color: #f8f9fa;
     font-family: 'Inter', sans-serif;
@@ -75,14 +72,14 @@ body {
 
 #recipe-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cards f l-line bhal Figma */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 15px;
     padding: 15px;
 }
 
 .recipe-card {
     background: white;
-    border-radius: 20px; /* Rounded corners bhal Figma */
+    border-radius: 20px; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     position: relative;
 }
@@ -110,7 +107,7 @@ border-radius: 30px;
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background: rgba(0, 192, 109, 0.9); /* Green Figma color */
+    background: rgba(0, 192, 109, 0.9);
     color: white;
     padding: 4px 10px;
     border-radius: 12px;

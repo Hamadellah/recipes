@@ -9,7 +9,6 @@ export function renderRecipes(recipes) {
         const badgeClass = getBadgeColor(recipe.caloriesPerServing);
 
         const cardHTML = `
-        
             <article class="recipe-card" data-id="${recipe.id}">
                 <div class="card-image-container">
                     <img src="${recipe.image}" alt="${recipe.name}">
@@ -18,7 +17,9 @@ export function renderRecipes(recipes) {
                 </div>
                 <div class="card-content">
                     <h3>${recipe.name}</h3>
-
+                    <div class="card-footer">
+                        <span class="rating">⭐ ${recipe.rating} <small>(${recipe.reviewCount || 0})</small></span>
+                    </div>
                 </div>
             </article>
         `;
