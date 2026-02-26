@@ -1,7 +1,7 @@
 // styles/main.scss
 
 // Couleurs Figma
-$bg-color: #f8f9fa;
+$bg-color: #000000;
 $primary-green: #00c06d;
 $text-dark: #1a1a1a;
 
@@ -83,6 +83,12 @@ body {
     border-radius: 20px; /* Rounded corners bhal Figma */
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     position: relative;
+}
+.categories-filter{
+    display: flex;
+    justify-content: center;
+    
+
 }
 
 .calorie-tag {

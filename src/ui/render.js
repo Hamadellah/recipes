@@ -9,6 +9,7 @@ export function renderRecipes(recipes) {
         const badgeClass = getBadgeColor(recipe.caloriesPerServing);
 
         const cardHTML = `
+        
             <article class="recipe-card" data-id="${recipe.id}">
                 <div class="card-image-container">
                     <img src="${recipe.image}" alt="${recipe.name}">
