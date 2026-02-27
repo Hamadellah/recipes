@@ -32,27 +32,26 @@ function setupFilters(recipes) {
         renderRecipes(recipes);
       } else {
         const filtered = recipes.filter(
-          (r) => r.mealType.includes(category), // DummyJSON عندها mealType كـ Array
+          (r) => r.mealType.includes(category),
         );
         renderRecipes(filtered);
       }
     });
   });
-  const grid = document.getElementById("recipe-grid");
+  const grid1 = document.getElementById("recipe-grid");
 
-  // Event Delegation: كنسمعو للكليك في الـ grid كامل
-  grid.addEventListener("click", (e) => {
-    // 1. مالي يورك على See More
+  grid1.addEventListener("click", (e) => {
     if (e.target.classList.contains("btn-see")) {
-      console.log("aaaaaaaaa");
       const id = parseInt(e.target.getAttribute("data-id"));
       const recipe = recipes.find((r) => r.id === id);
       renderRecipeDetail(recipe);
     }
+  });
+  const grid2 = document.getElementById("recipe-grid1");
 
-    // 2. مالي يورك على زر Back
+  grid2.addEventListener("click", (e) => {
     if (e.target.id === "btn-back") {
-      renderRecipes(recipes); // كنرجعو للستة كاملة
+        renderRecipes(recipes);
     }
   });
 }

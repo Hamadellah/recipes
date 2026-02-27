@@ -256,4 +256,8 @@ body {
   font-size: 40px;
   border-radius: 33px;
   border-color: transparent;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

@@ -4,11 +4,12 @@ import { getBadgeColor } from "../services/calorieService.js";
 export function renderRecipes(recipes) {
   const grid = document.getElementById("recipe-grid");
   grid.innerHTML = "";
-
+const grid1 = document.getElementById("recipe-grid1");
+grid1.innerHTML = "";
   recipes.forEach((recipe) => {
     const badgeClass = getBadgeColor(recipe.caloriesPerServing); 
 
-  
+    
     const cardHTML = `
             <article class="recipe-card" data-id="${recipe.id}">
                 <div class="card-image-container">
@@ -17,7 +18,7 @@ export function renderRecipes(recipes) {
                 </div>
                 <div class="card-content">
                     <h3>${recipe.name}</h3>
-                    <button class="btn-see" data-id="${recipe.id}">See More</button>
+                    <button class="btn-see" data-id="${recipe.id}">details</button>
                 </div>
             </article>
         `;
@@ -27,10 +28,11 @@ export function renderRecipes(recipes) {
 
 export function renderRecipeDetail(recipe) {
   const grid = document.getElementById("recipe-grid");
-  grid.innerHTML = ""; 
-
-    const detailHTML = `
-  <div class="hh">
+  grid.innerHTML = "";
+  const grid1 = document.getElementById("recipe-grid1");
+  grid1.innerHTML = "";
+  const detailHTML = `
+      <article class="recipe-card1" ">
         <div class="recipe-detail-view">
             <button id="btn-back" class="btn-back">⬅️ Back</button>
             <div class="detail-header">
@@ -42,7 +44,7 @@ export function renderRecipeDetail(recipe) {
                 <div class="section">
                     <h3>Ingredients (${recipe.ingredients.length})</h3>
                     <ul>
-                        ${recipe.ingredients.map((ing) => `<li>- ${ing}</li>`).join("")}
+                        ${recipe.ingredients.map((ing) => `<li> ${ing}</li>`).join("")}
                     </ul>
                 </div>
 
@@ -54,7 +56,7 @@ export function renderRecipeDetail(recipe) {
                 </div>
             </div>
         </div>
-        </div>
+          </article>
     `;
-  grid.innerHTML = detailHTML;
+  grid1.innerHTML = detailHTML;
 }
