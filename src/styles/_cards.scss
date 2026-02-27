@@ -1,5 +1,46 @@
 .btn-see{
     background-color: red;
-    width: 100px;
     height: 20px;
+    border-radius: 33px;
+    border-color: transparent;
+}
+ .recipe-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+   
+
+
+    .card-image-container {
+        position: relative;
+        height: 180px;
+
+        img { width: 100%; height: 100%; object-fit: cover; }
+
+        .btn-favorite-icon {
+            position: absolute;
+            top: 10px; right: 10px;
+            background: rgba(255,255,255,0.8);
+            border: none; border-radius: 50%;
+            width: 30px; height: 30px;
+        }
+
+        .calorie-tag {
+            position: absolute;
+            bottom: 10px; left: 10px;
+            padding: 4px 10px; border-radius: 12px;
+            font-size: 0.7rem; font-weight: bold; color: white;
+            
+            &.badge-green { background: #00c06d; }
+            &.badge-orange { background: #ff9f43; }
+            &.badge-red { background: #ee5253; }
+        }
+    }
+
+    .card-content {
+        padding: 12px;
+        h3 { font-size: 0.9rem; margin-bottom: 5px; line-height: 1.2; }
+        .rating { font-size: 0.8rem; color: #ff9f43; font-weight: bold; }
+    }
 }
